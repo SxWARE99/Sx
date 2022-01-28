@@ -78,7 +78,15 @@ sxbypass8 = 0xBAD8E0 -- Bypass 8
 sxbypass9 = 0xD00B54 -- Bypass 9
 sxbypass10 = 0xBF54C4 -- Bypass 10
 sxbypass11 = 0xCE33B4 -- Bypass 11
-sxbypass12 = 0xCE2124 -- Bypass 11
+sxbypass12 = 0xCE2124 -- Bypass 12
+sxbypass13 = 0x1A98D80 -- Bypass 13
+sxbypass14 = 0x1A98D80 -- Bypass 14
+sxbypass15 = 0x1A98D80 -- Bypass 15
+sxbypass16 = 0x1A93E94 -- Bypass 16
+sxbypass17 = 0xCE19F4 -- Bypass 17
+sxbypass18 = 0x1281D5C -- Bypass 18
+sxbypass19 = 0x187C7F0 -- Bypass 19
+
 sxantirep1 = 0x7066D0 -- Block Reports 1
 sxantirep2 = 0xA1925C -- Block Reports 2
 sxantirep3 = 0xB31980 -- Block Reports 3
@@ -88,6 +96,7 @@ sxesp = 0xCACEB4 + 0x94 -- Esp Radar
 sxredradar = 0xDCFB2C -- Red Radar
 sxteamradartrue = 0xB3FE34 -- Team Radar Edit True
 sxteamradarfalse = 0x1D7295C ---- Team Radar Edit False
+
 sxrecoil = 0xDD9514 -- No Recoil
 sxspread = 0xDD946C -- No Spread
 sxaimpunch = 0xDD9620 -- No Aimpunch
@@ -95,13 +104,16 @@ sxflash1 = 0xB004FC -- No Flash 1
 sxflash2 = 0xE07AE8 -- No Flash 2
 sxsmoke = 0xB634A8 -- No Smoke
 sxdamage = 0xB004FC -- No Grenade Damage
+
 sxspeed = 0xDD0310 -- Speed
 sxhead = 0xB08728 + 0xE8 -- Head Rain
 sxhidenames = 0xA6678C -- Hide Names
+
 sxskiptutorial1 = 0xC0CE4C -- Pass Tutorial 1
 sxskiptutorial2 = 0xC0D58C -- Pass Tutorial 2
 sxskiptutorial3 = 0xC0CE84 -- Pass Tutorial 3
 sxskiptutorial4 = 0xC0D610 -- Pass Tutorial 4
+
 sxpwd = 0x9E48F8 -- Play While Banned
 sxreload = 0xA7D1D8 -- Always Reloading Allowed
 sxcrosshair1 = 0xB3FA50 -- Always Visible Crosshair 1
@@ -110,12 +122,14 @@ sxcrosshair3 = 0xD0C4B0 -- Always Visible Crosshair 3
 sxhidecross1 = 0xB3FA50 -- Hide Crosshair 1
 sxhidecross2 = 0xD0F910 -- Hide Crosshair 2
 sxhidecross3 = 0xD0C4B0 -- Hide Crosshair 3
+
 sxantishake = 0xCA9398 -- Anti Shake
 sxaimassist = 0xA876A8 -- Aim Assist
 sxdumbbots = 0xC5597C -- Dumb Bots
 sxfakeduck = 0xDD430C -- Fake Duck
 sxsniperblur1 = 0xE07D78 --No Sniper Blur 1
 sxsniperblur2 = 0x1D78C9C --No Sniper Blur 2
+
 sxgravity1 = 0x1D71978 -- No Gravity 1
 sxgravity2 = 0x882E00 -- No Gravity 2
 sxwallshot = 0xB07EA8 -- WallShot
