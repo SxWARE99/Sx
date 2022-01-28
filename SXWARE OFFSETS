@@ -1,6 +1,6 @@
 --CHECK COPS
 gg.setRanges(gg.REGION_CODE_APP)--
-gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00  ", gg.TYPE_BYTE)
+gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00 00 4c 70 00 00 00 00 00 40 00 00 00 00 00 00 00 78 93 97 02 00 00 00 00 00 00 00 00 40 00 38 00 07 00 40 00 1c 00 1b 00 01 00 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 7c 62 02", gg.TYPE_BYTE)
 rCount = gg.getResultCount()
 if rCount == 0 then return gg.alert("🔍 Unable To Search 🔍\n❌ Il2cpp.so Codes Not Found ❌", "") end
 BaseAddress = gg.getResults(rCount)[1].address
