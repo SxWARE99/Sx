@@ -1,3 +1,11 @@
+--CHECK COPS
+gg.setRanges(gg.REGION_CODE_APP)--
+gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00  ", gg.TYPE_BYTE)
+rCount = gg.getResultCount()
+if rCount == 0 then return gg.alert("🔍 Unable To Search 🔍\n❌ Il2cpp.so Codes Not Found ❌", "") end
+BaseAddress = gg.getResults(rCount)[1].address
+gg.clearResults()
+--CHECKED COPS
 --START--
 gg.alert(os.date([[
 🖤 New Script For Critical Ops 🖤
@@ -57,65 +65,56 @@ Telegram :
 ~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~
 
 ]]))
---ENDED
---CHECK COPS
-gg.setRanges(gg.REGION_CODE_APP)--
-gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00  ", gg.TYPE_BYTE)
-rCount = gg.getResultCount()
-if rCount == 0 then return gg.alert("🔍 Unable To Search 🔍\n❌ Il2cpp.so Codes Not Found ❌", "") end
-BaseAddress = gg.getResults(rCount)[1].address
-gg.clearResults()
---CHECKED COPS
 --OFFSETS
 -- Bypass AntiCheat
-sxbypass1 = OFFSET -- Bypass 1
-sxbypass2 = OFFSET -- Bypass 2
-sxbypass3 = OFFSET -- Bypass 3
-sxbypass4 = OFFSET -- Bypass 4
-sxbypass5 = OFFSET -- Bypass 5
-sxbypass6 = OFFSET -- Bypass 6
-sxbypass7 = OFFSET -- Bypass 7
-sxbypass8 = OFFSET -- Bypass 8
-sxbypass9 = OFFSET -- Bypass 9
-sxbypass10 = OFFSET -- Bypass 10
-sxantirep1 = OFFSET -- Block Reports 1
-sxantirep2 = OFFSET -- Block Reports 2
-sxantirep3 = OFFSET -- Block Reports 3
-sxpartyanti = OFFSET -- Party AntiBan
-sxesp = OFFSET -- Esp Radar
-sxredradar = OFFSET -- Red Radar
-sxteamradartrue = OFFSET -- Team Radar Edit True
-sxteamradarfalse = OFFSET ---- Team Radar Edit False
-sxrecoil = OFFSET -- No Recoil
-sxspread = OFFSET -- No Spread
-sxaimpunch = OFFSET -- No Aimpunch
-sxflash = OFFSET -- No Flash
-sxsmoke = OFFSET -- No Smoke
-sxdamage = OFFSET -- No Grenade Damage
-sxspeed = OFFSET -- Speed
-sxhead = OFFSET -- Head Rain
-sxhidenames = OFFSET -- Hide Names
-sxskiptutorial1 = OFFSET -- Pass Tutorial 1
-sxskiptutorial2 = OFFSET -- Pass Tutorial 2
-sxskiptutorial3 = OFFSET -- Pass Tutorial 3
-sxskiptutorial4 = OFFSET -- Pass Tutorial 4
-sxpwd = OFFSET -- Play While Banned
-sxreload = OFFSET -- Always Reloading Allowed
-sxcrosshair1 = OFFSET -- Always Visible Crosshair 1
-sxcrosshair2 = OFFSET -- Always Visible Crosshair 2
-sxcrosshair3 = OFFSET -- Always Visible Crosshair 3
-sxhidecross1 = OFFSET -- Hide Crosshair 1
-sxhidecross2 = OFFSET -- Hide Crosshair 2
-sxhidecross3 = OFFSET -- Hide Crosshair 3
-sxantishake = OFFSET -- Anti Shake
-sxaimassist = OFFSET -- Aim Assist
-sxdumbbots = OFFSET -- Dumb Bots
-sxfakeduck = OFFSET -- Fake Duck
-sxsniperblur1 = OFFSET --No Sniper Blur 1
-sxsniperblur2 = OFFSET --No Sniper Blur 2
-sxgravity1 = OFFSET -- No Gravity 1
-sxgravity2 = OFFSET -- No Gravity 2
-sxwallshot = OFFSET -- WallShot
-sxclip = OFFSET -- No Clip
+sxbypass1 = 0xCE1D6C -- Bypass 1
+sxbypass2 = 0xBAD744 -- Bypass 2
+sxbypass3 = 0x730448 -- Bypass 3
+sxbypass4 = 0x730458 -- Bypass 4
+sxbypass5 = 0xBAD6F4 -- Bypass 5
+sxbypass6 = 0xBAD820 -- Bypass 6
+sxbypass7 = 0xBAD820 -- Bypass 7
+sxbypass8 = 0xBAD8E0 -- Bypass 8
+sxbypass9 = 0xD00B54 -- Bypass 9
+sxbypass10 = 0xBF54C4 -- Bypass 10
+sxantirep1 = 0x7066D0 -- Block Reports 1
+sxantirep2 = 0xA1925C -- Block Reports 2
+sxantirep3 = 0xB31980 -- Block Reports 3
+sxpartyanti = 0x9E4670 -- Party AntiBan
+sxesp = 0xCACEB4 -- Esp Radar
+sxredradar = 0xDCFB2C -- Red Radar
+sxteamradartrue = 0xB3FE34 -- Team Radar Edit True
+sxteamradarfalse = 0x1D7295C ---- Team Radar Edit False
+sxrecoil = 0xDD9514 -- No Recoil
+sxspread = 0xDD946C -- No Spread
+sxaimpunch = 0xDD9620 -- No Aimpunch
+sxflash = 0xB004FC -- No Flash
+sxsmoke = 0xB634A8 -- No Smoke
+sxdamage = 0xB004FC -- No Grenade Damage
+sxspeed = 0xDD0310 -- Speed
+sxhead = 0xB08728 + 0xE8 -- Head Rain
+sxhidenames = 0xA6678C -- Hide Names
+sxskiptutorial1 = 0xC0CE4C -- Pass Tutorial 1
+sxskiptutorial2 = 0xC0D58C -- Pass Tutorial 2
+sxskiptutorial3 = 0xC0CE84 -- Pass Tutorial 3
+sxskiptutorial4 = 0xC0D610 -- Pass Tutorial 4
+sxpwd = 0x9E48F8 -- Play While Banned
+sxreload = 0xA7D1D8 -- Always Reloading Allowed
+sxcrosshair1 = 0xB3FA50 -- Always Visible Crosshair 1
+sxcrosshair2 = 0xD0F910 -- Always Visible Crosshair 2
+sxcrosshair3 = 0xD0C4B0 -- Always Visible Crosshair 3
+sxhidecross1 = 0xB3FA50 -- Hide Crosshair 1
+sxhidecross2 = 0xD0F910 -- Hide Crosshair 2
+sxhidecross3 = 0xD0C4B0 -- Hide Crosshair 3
+sxantishake = 0xCA9398 -- Anti Shake
+sxaimassist = 0xA876A8 -- Aim Assist
+sxdumbbots = 0xC5597C -- Dumb Bots
+sxfakeduck = 0xDD430C -- Fake Duck
+sxsniperblur1 = 0xE07D78 --No Sniper Blur 1
+sxsniperblur2 = 0x1D78C9C --No Sniper Blur 2
+sxgravity1 = 0x1D71978 -- No Gravity 1
+sxgravity2 = 0x882E00 -- No Gravity 2
+sxwallshot = 0xB07EA8 -- WallShot
+sxclip = 0xA67290 -- No Clip
 
 --✓✓
