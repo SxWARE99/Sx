@@ -1,10 +1,5 @@
 --START--
 --CHECK COPS
-if gg.getTargetInfo().processName ~= "com.criticalforceentertainment.criticalops" then
-print("🔍 Unable To Search 🔍\n❌ Il2cpp.so Codes Not Found ❌")
-os.exit()
-gg.setVisible(true)
-end
 gg.setRanges(gg.REGION_CODE_APP)--
 gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00  ", gg.TYPE_BYTE)
 rCount = gg.getResultCount()
