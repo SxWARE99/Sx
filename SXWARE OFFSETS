@@ -106,7 +106,6 @@ sxsmoke = 0xB634A8 -- No Smoke
 sxdamage = 0xB004FC -- No Grenade Damage
 
 sxspeed = 0xDD0310 -- Speed
-sxhead = 0xB08728 + 0xE8 -- Head Rain
 sxhidenames = 0xA6678C -- Hide Names
 
 sxskiptutorial1 = 0xC0CE4C -- Pass Tutorial 1
@@ -134,5 +133,15 @@ sxgravity1 = 0x1D71978 -- No Gravity 1
 sxgravity2 = 0x882E00 -- No Gravity 2
 sxwallshot = 0xB07EA8 -- WallShot
 sxclip = 0xA67290 -- No Clip
+
+function sxheadrain()
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("he0 03 27 1e 22 1d a9 4e e0 03 1f aa a8 d9 1f 94 09 1c a0 4e d7 3e 40 f9  ", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(4, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("h00 90 26 1E", gg.TYPE_BYTE)
+gg.toast('Head Rain✅')
+end
 
 --✓✓
