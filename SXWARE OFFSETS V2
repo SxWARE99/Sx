@@ -1,0 +1,189 @@
+gg.setRanges(gg.REGION_CODE_APP)--
+gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00 00 4c 70 00 00 00 00 00 40 00 00 00 00 00 00 00 78 93 97 02 00 00 00 00 00 00 00 00 40 00 38 00 07 00 40 00 1c 00 1b 00 01 00 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 7c 62 02", gg.TYPE_BYTE)
+gg.toast('libil2cpp injected✅')
+gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00 20 94 0a 00 00 00 00 00 40 00 00 00 00 00 00 00 c0 89 05 01 00 00 00 00 00 00 00 00 40 00 38 00 08 00 40 00 1d 00 1c 00 01 00 00 00 05 00 00 00  ", gg.TYPE_BYTE)
+gg.toast('libunity injected✅')
+rCount = gg.getResultCount()
+if rCount == 0 then return gg.alert("🔍 Unable To Search 🔍\n❌Lib Codes Not Found❌\n✅ Please Open Critical Ops And Select Critical Ops ✅", "")
+end
+
+BaseAddress = gg.getResults(rCount)[1].address
+gg.clearResults()
+
+gg.alert(os.date([[
+🖤 New Script For Critical Ops 🖤
+❤️ Version : 1.30.0.f1692 ❤️
+
+👤 Developer : SxWARE
+⏰ Time : %H.%M
+🌤️ Today : %d January
+
+🗞️ Mega Script News V10
+
+ • Nothing Updated/Deleted/Added
+
+⚠️ Warnings
+– Not Use Main Critical Account
+– Not Open "Head Rain" Because "Strong Ban Risk"
+– If You Get IP / Device Banned It's Not Our Problem
+– First Open AntiCheat Bypass
+– Run AntiCheat Bypass Only Game.
+– Rage can only 15-20 matches.
+
+───────────────────────────
+ 
+🖤 My Team 🖤
+👤loogo#4346 
+👤SxWARE#7502
+👤Rooxie#8256 
+👤Saitama#4942 
+👤ElnathWare#8346 
+👤《_HDhile)#4118 
+
+💎 Discord Servers :
+Revenge Community #Old 
+   🔗 mylink
+XieWARE® 
+   🔗 discord.gg/qhMzszvygv
+───────────────────────────
+Cheat Rules!
+
+  • For Legit
+       ✓ Open "AntiCheat Bypass"
+       ✓ Open "Block Reports"
+       ✓ Open "Radar ESP/Red Radar"
+       ✓ Open "No Spread"
+       ✓ Open "Body Rain"
+       
+  • For Rage
+       ✓ Open All Cheats :D
+
+───────────────────────────
+If You Want To Contact Me 👒
+
+Discord : SxWARE#7502
+Telegram :
+   🔗 t.me/S_X_W_A_R_E
+───────────────────────────]]))
+function sxbypass()
+gg.alert("This Is The Strongest Antiban You Can Find (Best Antiban) \nCoded : SxWARE#7502")
+function SetMemValue_HEX(offset,replaced)
+local h = {}
+ h[1] = {}
+h[1].address = BaseAddress + offset
+h[1].flags = 32
+h[1].value = "h"..replaced
+gg.setValues(h)
+end
+SetMemValue_HEX("0xCE1D6C","000080D2C0035FD6") 
+SetMemValue_HEX("0xBAD744","000080D2C0035FD6") 
+SetMemValue_HEX("0x730448","000080D2C0035FD6") 
+SetMemValue_HEX("0x730458","000080D2C0035FD6") 
+SetMemValue_HEX("0xBAD6F4","000080D2C0035FD6")
+SetMemValue_HEX("0xBAD820","000080D2C0035FD6") 
+SetMemValue_HEX("0xBAD870","000080D2C0035FD6") 
+SetMemValue_HEX("0xBAD8E0","000080D2C0035FD6") 
+SetMemValue_HEX("0xD00B54","000080D2C0035FD6") 
+SetMemValue_HEX("0xBF54C4","000080D2C0035FD6")
+SetMemValue_HEX("0xCE1660","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE1A6C","000080D2C0035FD6") 
+SetMemValue_HEX("0x72F9E8","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE1D38","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE2124","000080D2C0035FD6")
+SetMemValue_HEX("0xCE33B4","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE2A5C","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE3010","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE2590","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE343C","000080D2C0035FD6")
+SetMemValue_HEX("0xCE34BC","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE352C","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE35AC","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE361C","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE197C","000080D2C0035FD6")
+SetMemValue_HEX("0xCE23EC","000080D2C0035FD6") 
+SetMemValue_HEX("0xCE3928","000080D2C0035FD6") 
+SetMemValue_HEX("0xEA3784","000080D2C0035FD6") 
+SetMemValue_HEX("0x9B8400","000080D2C0035FD6") 
+SetMemValue_HEX("0x9B8734","000080D2C0035FD6")
+SetMemValue_HEX("0x1031D4C","000080D2C0035FD6") 
+SetMemValue_HEX("0x1032E54","000080D2C0035FD6") 
+SetMemValue_HEX("0xE91754","000080D2C0035FD6") 
+SetMemValue_HEX("0xD741D0","000080D2C0035FD6") 
+SetMemValue_HEX("0x9B0CE4","000080D2C0035FD6")
+SetMemValue_HEX("0x9B1298","000080D2C0035FD6") 
+SetMemValue_HEX("0xE917EC","000080D2C0035FD6") 
+SetMemValue_HEX("0x9B0CE4","000080D2C0035FD6") 
+SetMemValue_HEX("0x9B1298","000080D2C0035FD6") 
+SetMemValue_HEX("0xBF31C0","000080D2C0035FD6")
+SetMemValue_HEX("0x1026460","000080D2C0035FD6")
+gg.toast('Bypassed AntiCheat✅')
+end
+
+sxantirep1 = 0x7066D0 -- Block Reports 1
+sxantirep2 = 0xA1925C -- Block Reports 2
+sxantirep3 = 0xB31980 -- Block Reports 3
+sxpartyanti1 = 0x9E4670 -- Party AntiBan
+sxpartyanti2 = 0x9E4670 -- Party AntiBan 2
+
+
+sxesp = 0xCACEB4 -- Esp Radar
+sxredradar = 0xDCFB2C -- Red Radar
+sxteamradartrue = 0xB3FE34 -- Team Radar Edit True
+sxteamradarfalse = 0x1D7295C ---- Team Radar Edit False
+
+sxrecoil = 0xDD9514 -- No Recoil
+sxspread = 0xDD946C -- No Spread
+sxaimpunch = 0xDD9620 -- No Aimpunch
+sxflash1 = 0xB004FC -- No Flash 1
+sxflash2 = 0xE07AE8 -- No Flash 2
+sxsmoke = 0xB634A8 -- No Smoke
+sxdamage = 0xB004FC -- No Grenade Damage
+
+sxhidenames = 0xA6678C -- Hide Names
+
+sxskiptutorial1 = 0xC0CE4C -- Pass Tutorial 1
+sxskiptutorial2 = 0xC0D58C -- Pass Tutorial 2
+sxskiptutorial3 = 0xC0CE84 -- Pass Tutorial 3
+sxskiptutorial4 = 0xC0D610 -- Pass Tutorial 4
+
+sxpwd = 0x9E48F8 -- Play While Banned
+sxreload = 0xA7D1D8 -- Always Reloading Allowed
+sxcrosshair1 = 0xB3FA50 -- Always Visible Crosshair 1
+sxcrosshair2 = 0xD0F910 -- Always Visible Crosshair 2
+sxcrosshair3 = 0xD0C4B0 -- Always Visible Crosshair 3
+sxhidecross1 = 0xB3FA50 -- Hide Crosshair 1
+sxhidecross2 = 0xD0F910 -- Hide Crosshair 2
+sxhidecross3 = 0xD0C4B0 -- Hide Crosshair 3
+
+sxantishake = 0xCA9398 -- Anti Shake
+sxaimassist = 0xA876A8 -- Aim Assist
+sxdumbbots = 0xC5597C -- Dumb Bots
+sxfakeduck = 0xDD430C -- Fake Duck
+sxsniperblur1 = 0xE07D78 --No Sniper Blur 1
+sxsniperblur2 = 0x1D78C9C --No Sniper Blur 2
+
+sxgravity1 = 0x1D71978 -- No Gravity 1
+sxgravity2 = 0x882E00 -- No Gravity 2
+sxwallshot = 0xB07EA8 -- WallShot
+sxclip = 0xA67290 -- No Clip
+
+function sxheadrain()
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("he0 03 27 1e 22 1d a9 4e e0 03 1f aa a8 d9 1f 94 09 1c a0 4e d7 3e 40 f9  ", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(4, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("h00 90 26 1E", gg.TYPE_BYTE)
+gg.toast('Head Rain✅')
+end
+
+--✓✓
+
+local Passwords = {"1212"} 
+local Menu = gg.prompt({"👤Token : "},nil,{"text"})
+if not Menu then return end
+for l , I in pairs(Passwords) do
+if Menu[1] == I then A = true end
+end
+if A ~= true then gg.alert("Wrong Token!","Exit Script") return else gg.toast("Successful Token!") gg.sleep(400) end
+
