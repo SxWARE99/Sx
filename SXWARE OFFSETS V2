@@ -3,7 +3,7 @@ gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01
 gg.toast('libil2cpp injected✅')
 gg.searchNumber("h7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 03 00 b7 00 01 00 00 00 20 94 0a 00 00 00 00 00 40 00 00 00 00 00 00 00 c0 89 05 01 00 00 00 00 00 00 00 00 40 00 38 00 08 00 40 00 1d 00 1c 00 01 00 00 00 05 00 00 00  ", gg.TYPE_BYTE)
 gg.toast('libunity injected✅')
-os.exit()
+end
 rCount = gg.getResultCount()
 if rCount == 0 then return gg.alert("🔍 Unable To Search 🔍\n❌Lib Codes Not Found❌\n✅ Please Open Critical Ops And Select Critical Ops ✅", "")
 end
